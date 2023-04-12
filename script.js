@@ -17,6 +17,6 @@ function displayData() {
   }
 }
 function updateData() {
-  data.push(9);
+  data.push(Math.floor(Math.random() * 32) + 1);
   data.shift();
 }
