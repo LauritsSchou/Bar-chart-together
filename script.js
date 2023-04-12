@@ -5,8 +5,14 @@ const data = [16, 25, 6, 22, 11, 4, 7, 15, 19, 1, 6, 31, 19, 11, 9, 8, 2, 29, 31
 
 function initApp() {
   console.log("JS is running");
+  displayData();
+}
+function displayData() {
   const bars = document.querySelectorAll(".bar");
-  const firstBar = bars[0];
-  const height = (data[0] / 32) * 100;
-  firstBar.style.height = `${height}px`;
+
+  for (let i = 0; i < 40; i++) {
+    const currentBar = bars[i];
+    const height = (data[i] / 32) * 100;
+    currentBar.style.height = `${height}px`;
+  }
 }
