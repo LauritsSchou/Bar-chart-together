@@ -16,7 +16,7 @@ function displayData() {
     currentBar.style.height = `${height}px`;
   }
 }
-function updateData() {
+function generateData() {
   data.push(Math.floor(Math.random() * 32) + 1);
   data.shift();
 }
