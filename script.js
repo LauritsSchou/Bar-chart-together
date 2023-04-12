@@ -20,3 +20,8 @@ function generateData() {
   data.push(Math.floor(Math.random() * 32) + 1);
   data.shift();
 }
+function scrollData() {
+  displayData();
+  generateData();
+}
+setInterval(scrollData, 1000);
